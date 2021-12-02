@@ -1,1 +1,1 @@
-# anti-adblock
+#

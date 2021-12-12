@@ -95,7 +95,7 @@
       var source = output.value.trim();
       if (source === '') return;
       if (!workerFormat) {
-        workerFormat = createWorker('https://vietbloggerdesign.github.io/de4js/format.js');
+        workerFormat = createWorker('./demoapp/proyecto-pro/D3obfusc4t0r/format.js');
         workerFormat.addEventListener('message', function(e) {
           view.innerHTML = e.data;
           externalPreview(e.data);
@@ -142,7 +142,7 @@
         return;
       }
       if (!workerDecode) {
-        workerDecode = createWorker('https://vietbloggerdesign.github.io/de4js/decode.js');
+        workerDecode = createWorker('./demoapp/proyecto-pro/D3obfusc4t0r/decode.js');
         workerDecode.addEventListener('message', function(e) {
           output.value = e.data;
           if (auto.checked && input.value !== output.value) {

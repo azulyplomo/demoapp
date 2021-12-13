@@ -187,7 +187,7 @@
     decode();
   };
   clear.onclick = function() {
-    view.textContent = 'Please choose a right encoding type & wait for a vile after pasting code!';
+    view.textContent = '¡Elija un tipo de codificación correcto y espere unos segundos después de pegar el código!';
     stopEffect();
     setTimeout(function() {
       auto.onchange();
